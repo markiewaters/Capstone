@@ -1,29 +1,49 @@
-# Savvy Coders Project Boilerplate Starter Kit
+<!-- MR Capstone Project "PhotoLoto" -->
 
-## Overview
+<!-- Definition Statement -->
 
-This template repository contains several opinionated, 'starter' files and settings to help Savvy Coder students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.
+## I want to create a web application that allows fellow photographers have an easier time to find nearby events/landmarks. This also applies for visitors/friends who will be in the city.
 
-In addition to a '.gitignore' and some VS Code specific extensions and settings, it includes the 'recommended' settings for:
+<!-- Define Audience -->
 
-1. [ESLint](eslint.org)
-2. [Stylelint](stylelint.io)
-3. [Prettier](prettier.io)
+## My focus is to direct street photographers to areas that are highly recognized. The second part of the audience is to apply this same concept to visitors and travelers who want to see the sights/landmarks of the city.
 
-## Get Started
+<!-- Define your content -->
 
-**First and foremost,** make sure that your local machine is set up with all of the 'dev environment tooling' as per the instructions in the curriculum.
+### Color scheme: https://colorhunt.co/palette/fff3dadfccfbd0bfffbeadfa
 
-Well, after establishing your directory structure on your local machine, (e.g. '~/Code/SavvyCoders'), clone the Savvy Starter Repo - essentially, there should be a button that says **Use this template.**
+### Fonts: https://fonts.google.com/specimen/Crimson+Text?stroke=Serif https://fonts.google.com/specimen/Quicksand?stroke=Sans+Serif
 
-> [Read more about using templates on GitHub here...](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
+<!-- Mural Board -->
 
-Once this repo has been created on your GitHub, you can click on the button to 'clone' it as usual.
+### Mural Board: https://app.mural.co/t/savvycoders8191/m/savvycoders8191/1692925713101/d7668afe1dd4c9508c1070771390ac270549a71b?sender=ucd2c793aac8594af08377174
 
-Once it's `clone`d to your local machine, `cd` into the directory and **be sure to do:** `npm i` to get all of the dependencies installed. If you see any _errors_ (warnings are OK) on Windows, you may have to do `npm install`.
+<!-- Wire Frames -->
 
-Now, enter `code .` to open this project in VS Code, and look for a prompt to 'install some extensions' once inside VS Code (in the bottom `right` of your screen). You should install these.
+### Wire Frames:
 
-In your repo, feel free to update this README and make any other initial changes to files, etc. Then go ahead and do your usual `git` steps -- add, commit, and push.
+1. Home Page: https://app.diagrams.net/#G1hEjFztf9IU8rHsQJGEKBb9hN07ZPl7lA
 
-**Note:** This is a template repository, no need to 'fork it.
+2. 2nd Page: https://app.diagrams.net/#G1hEjFztf9IU8rHsQJGEKBb9hN07ZPl7lA#%7B%22pageId%22%3A%22_0yshnsEhjRfeBFgNPsN%22%7D
+
+3. 3rd Page: https://app.diagrams.net/#G1hEjFztf9IU8rHsQJGEKBb9hN07ZPl7lA#%7B%22pageId%22%3A%22vRcyr9svrjRmigwn8UBZ%22%7D
+
+4. 4th Page: https://app.diagrams.net/#G1hEjFztf9IU8rHsQJGEKBb9hN07ZPl7lA#%7B%22pageId%22%3A%22l2yjVA4TB2GfQCSuNPFg%22%7D
+
+<!-- userFlow Chart -->
+
+### User Flow Chart : https://app.diagrams.net/#G1hEjFztf9IU8rHsQJGEKBb9hN07ZPl7lA
+
+<!-- Research -->
+
+### Applications that are similiar to what I want in my capstone project : https://foursquare.com/city-guide https://www.airbnb.com/
+
+#### Foursquare : Having the list of highlighted pins to the left of the map is appealing and intuitive like Google maps. Although it does not redirect to a maps app, instead it goes to another page on the website
+
+#### AirBnB : What I like specifically in AirBnB is the layout and how easy it is on the eyes. There may be a lot of content, but is spaced accordingly.
+
+#### I want my application to have the functionality of redirecting to google maps/apple maps. I will try to emulate AirBnB in terms of spacing but not make direct copy. To summarize; The fluidity of AirBnB when it comes the UI and the layout of foursquare's content with mapping.
+
+<!-- SWOT Analysis -->
+
+### SWOT Analysis: https://docs.google.com/document/d/1Q1_84gkMgZ1-5-u3ibf10xy8EJtisZskJBQ1n_15Xbs/edit

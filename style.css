@@ -1,0 +1,52 @@
+* {
+  background-color: #FFF3DA;
+}
+h1, p, div {
+  color: #BEADFA;
+}
+@media (min-width: 550px) {
+  nav>.fa-bars {
+    display: none;
+  }
+    .hidden--mobile {
+      display: none;
+    }
+}
+header > ul {
+  display: inline-block;
+}
+
+.introDesc {
+  text-align: center;
+}
+.headerImg {
+  text-align: center;
+}
+.headerPhoto {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+}
+.header {
+  text-align: center;
+}
+
+.trackingList {
+  border: 5px solid black;
+  margin: 25px;
+  display: inline-block;
+}
+.mapQuest {
+  border: 5px solid black;
+  margin: 25px;
+  display: inline-block;
+}
+.twoColumns {
+  width: 100%;
+  text-align: center;
+}
+
+.myImage {
+  width: 200px;
+  height: 200px;
+}
