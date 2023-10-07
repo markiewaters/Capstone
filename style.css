@@ -1,10 +1,33 @@
-* {
+/* * {
   background-color: #FFF3DA;
+} */
+body {
+  background-image: url(assets/img/pexels-leah-kelley-3935702.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 1px solid;
 }
+
 h1, p, div {
-  color: #BEADFA;
+  color: #4b00a6;
 }
+
+@media (min-width: 950px) {
+ .fa-bars{
+  display: contents;
+ }
+ .hidden--mobile {
+   display: none;
+ }
+}
+
 @media (min-width: 550px) {
+  img {
+    background-image: url(assets/img/pexels-leah-kelley-3935702.jpg);
+    background-size: cover;
+
+  }
   nav>.fa-bars {
     display: none;
   }
@@ -29,6 +52,11 @@ header > ul {
 }
 .header {
   text-align: center;
+}
+
+.heroImg {
+  width: 300px;
+  height: 200px;
 }
 
 .trackingList {
