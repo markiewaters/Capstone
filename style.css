@@ -5,13 +5,16 @@ body {
   background-image: url(assets/img/pexels-leah-kelley-3935702.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
 
-  border-radius: 1px solid;
+.Homepage {
+  background-color: #f5f5f5;
 }
 
 h1, p, div {
   color: #4b00a6;
 }
+
 
 @media (min-width: 950px) {
  .fa-bars{
@@ -22,7 +25,7 @@ h1, p, div {
  }
 }
 
-@media (min-width: 550px) {
+@media (max-width: 550px) {
   img {
     background-image: url(assets/img/pexels-leah-kelley-3935702.jpg);
     background-size: cover;
