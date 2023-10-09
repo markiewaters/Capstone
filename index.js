@@ -53,6 +53,8 @@ router.hooks({
             done();
           });
         break;
+      default:
+        done();
     }
   },
   already: (params) => {
