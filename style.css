@@ -1,53 +1,124 @@
-/* * {
-  background-color: #FFF3DA;
-} */
+/* CSS Setup */
 body {
-  background-image: url(assets/img/pexels-leah-kelley-3935702.jpg);
+  background: url(assets/img/pexels-leah-kelley-3935702.jpg) center center no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
-
-.Homepage {
-  background-color: #f5f5f5;
-}
-
-h1, p, div {
+h1 {
+  font-family: 'Crimson Text', serif;
+  font-size: 50px;
   color: #4b00a6;
 }
 
-
-@media (min-width: 950px) {
- .fa-bars{
-  display: contents;
- }
- .hidden--mobile {
-   display: none;
- }
+p, div {
+  color: #4b00a6;
+  font-family: 'Quicksand', sans-serif;
 }
 
-@media (max-width: 550px) {
-  img {
-    background-image: url(assets/img/pexels-leah-kelley-3935702.jpg);
-    background-size: cover;
 
-  }
-  nav>.fa-bars {
-    display: none;
-  }
-    .hidden--mobile {
-      display: none;
-    }
+.fa-bars {
+  display: none;
 }
-header > ul {
-  display: inline-block;
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
 }
 
+.nav-links>li {
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  border-radius: 30px;
+  margin: 0 5rem;
+}
+
+/* CSS Setup */
+
+/* Home Page Section */
+.Homepage {
+  background-color: #f5f5f5;
+  margin: 25px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 2px 2px rgb(101, 101, 101);
+}
+.heroImg {
+  height: 12px;
+  width: 12px;
+}
 .introDesc {
-  text-align: center;
+  /* font-size: 16px; */
 }
-.headerImg {
-  text-align: center;
+/* Home Page Section */
+
+
+/* About Section */
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
 }
+
+.selfDesc {
+  background-color: #f5f5f5;
+  margin: 0 50px;
+  padding: 25px;
+  border-radius: 25px;
+  width: 50%;
+  font-size: 1.6rem;
+  font-family: "Quicksand";
+  letter-spacing: 2px;
+}
+
+.about-imgContainer {
+  width: 50%;
+}
+
+.about-img {
+  width: 40rem;
+  height: 25rem;
+  border-radius: 25px;
+  margin: 0 50px;
+}
+/* About Section */
+
+/* Share Section */
+.share-form {
+  background-color: #f5f5f5;
+  margin: 0 5rem;
+  border-radius: 25px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+form > label {
+  margin: 5px;
+  border-radius: 25px;
+  padding: 5px;
+}
+form > input {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.textDesc {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+/* Share Section */
+
+
 .headerPhoto {
   width: 450px;
   height: 300px;
@@ -55,11 +126,6 @@ header > ul {
 }
 .header {
   text-align: center;
-}
-
-.heroImg {
-  width: 300px;
-  height: 200px;
 }
 
 .trackingList {
@@ -81,3 +147,66 @@ header > ul {
   width: 200px;
   height: 200px;
 }
+
+/* Media Queries */
+@media (max-width: 549px) {
+  .hidden--mobile {
+    display: none !important;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav>i {
+    padding: 1rem;
+    font-size: 2em;
+  }
+
+  nav>ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  nav>ul>li {
+    padding: 0.5rem;
+    list-style-type: none;
+  }
+}
+
+@media (max-width: 550px) {
+  img {
+    background-image: url(assets/img/pexels-leah-kelley-3935702.jpg);
+    background-size: cover;
+
+  }
+
+  nav>.fa-bars {
+    display: none;
+  }
+
+  .hidden--mobile {
+    display: none;
+  }
+}
+@media (min-width: 550px) {
+  nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 0.5rem 0.5rem;
+    border-radius: 25px;
+  }
+
+}
+/* Media Queries */

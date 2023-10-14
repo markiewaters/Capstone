@@ -1,4 +1,4 @@
-<!-- MR Capstone Project "PhotoLoto" -->
+# MR Capstone Project "PhotoLoto"
 
 <!-- Definition Statement -->
 

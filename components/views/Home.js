@@ -1,13 +1,13 @@
 import html from "html-literal";
-import myImage from "/assets/img/pexels-leah-kelley-3935702.jpg";
+import travelImg from "/assets/img/walkImg.png";
 
 export default (state) => html`
   <section class="Homepage">
-      <p class="introDesc">
+      <h2 class="introDesc">
         Find your next journey here!
-      </p>
+      </h2>
       <div class="headerImg">
-        <img class="heroImg" src="${myImage}" />
+        <img class="heroImg" src="${travelImg}" />
       </div>
       <div class="twoColumns">
         <div class="trackingList">
@@ -22,5 +22,5 @@ export default (state) => html`
       ${state.weather.feelsLike}F.
     </h3>
   </section>
-  
+
 `;
