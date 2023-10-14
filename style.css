@@ -18,15 +18,38 @@ p, div {
   font-family: 'Quicksand', sans-serif;
 }
 
+
+.fa-bars {
+  display: none;
+}
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.nav-links>li {
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  border-radius: 30px;
+  margin: 0 5rem;
+}
+
 /* CSS Setup */
 
 /* Home Page Section */
 .Homepage {
   background-color: #f5f5f5;
-  margin: 50px;
+  margin: 25px;
   border-radius: 25px;
   text-align: center;
   padding: 25px 0;
+  box-shadow: 2px 2px rgb(101, 101, 101);
 }
 .heroImg {
   height: 12px;
@@ -67,32 +90,35 @@ p, div {
 }
 /* About Section */
 
-
-
-nav {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-decoration: none;
-}
-
-.nav-links > li {
+/* Share Section */
+.share-form {
   background-color: #f5f5f5;
-}
-
-.header {
-  background-color: #f5f5f5;
-  border: 1px solid #f5f5f5;
-  border-radius: 30px;
   margin: 0 5rem;
+  border-radius: 25px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+form > label {
+  margin: 5px;
+  border-radius: 25px;
+  padding: 5px;
+}
+form > input {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 25px;
 }
 
-.introDesc {
-  text-align: center;
+.textDesc {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 25px;
 }
-.headerImg {
-  text-align: center;
-}
+
+/* Share Section */
+
+
 .headerPhoto {
   width: 450px;
   height: 300px;
@@ -122,7 +148,7 @@ nav {
   height: 200px;
 }
 
-
+/* Media Queries */
 @media (max-width: 549px) {
   .hidden--mobile {
     display: none !important;
@@ -149,13 +175,6 @@ nav {
   nav>ul>li {
     padding: 0.5rem;
     list-style-type: none;
-  }
-
-  #bio img {
-    float: left;
-    width: 40%;
-    height: auto;
-    margin-right: 1rem;
   }
 }
 
@@ -189,15 +208,5 @@ nav {
     border-radius: 25px;
   }
 
-  #bio {
-    margin-right: 3rem;
-  }
-
-  #bio img {
-    float: left;
-    width: 25%;
-    height: auto;
-    margin-right: 1rem;
-  }
 }
 /* Media Queries */
