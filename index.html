@@ -26,11 +26,31 @@
       href="./assets/img/photoloto-logo.png"
       type="image/icon type"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- MapQuest Map -->
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"
+    />
     <title>PhotoLoto</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="index.js"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        L.mapquest.key = "eLDpviCix0kGMhNPYwBUzzDz6upWqqi7";
+
+        var map = L.mapquest.map("map", {
+          center: [37.7749, -122.4194],
+          layers: L.mapquest.tileLayer("map"),
+          zoom: 12,
+        });
+
+        map.addControl(L.mapquest.control());
+      };
+    </script>
   </body>
 </html>

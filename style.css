@@ -48,15 +48,23 @@ nav {
   margin: 25px;
   border-radius: 25px;
   text-align: center;
-  padding: 25px 0;
-  box-shadow: 2px 2px rgb(101, 101, 101);
+  padding: 5px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
 }
 .heroImg {
   height: 12px;
   width: 12px;
 }
-.introDesc {
-  /* font-size: 16px; */
+
+.mapContainer {
+  align-items: center;
+  /* width: 80%; */
+}
+
+#map {
+  width: 100%;
+  height: 550px;
+  border-radius: 25px;
 }
 /* Home Page Section */
 
