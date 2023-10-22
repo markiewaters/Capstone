@@ -1,11 +1,28 @@
 // 'Import' the Express module instead of http
 import express from "express";
 import dotenv from "dotenv";
+import mongoose from "mongoose";
+import reviews from "./routers/reviews.js";
+
 // Initialize the Express application
 const app = express();
 
 // Load environment variables from .env file
 dotenv.config();
+
+mongoose.connect(process.env.MONGODB, {
+  // Configuration options to remove deprecation warnings, just include them to remove clutter
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
+const db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "Connection Error:"));
+db.once(
+  "open",
+  console.log.bind(console, "Successfully opened connection to Mongo!")
+);
 
 const PORT = process.env.PORT || 4040;
 
@@ -38,13 +55,6 @@ app.use(logging);
 
 // Handle the request with HTTP GET method from http://localhost:4040/status
 app.get("/status", (request, response) => {
-  // Create the headers for response by default 200
-  // Create the response body
-  // End and return the response
-  // Old version of Service Healthy
-  // response.send(JSON.stringify({ message: "Service is healthy" }));
-
-  // New version of Service Healthy
   response.status(200).json({ message: "Service Healthy" });
 });
 
@@ -82,12 +92,14 @@ app.get("/weather/:city", (request, response) => {
       rainy,
       temp: {
         current: temp,
-        low: lowTemp,
+        low: lowTemp
       },
-      city,
+      city
     })
   );
 });
+
+app.use("/reviews", reviews);
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040

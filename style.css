@@ -58,7 +58,8 @@ nav {
 
 .mapContainer {
   align-items: center;
-  /* width: 80%; */
+  width: 80%;
+  margin: auto auto;
 }
 
 #map {
@@ -136,16 +137,16 @@ form > input {
   text-align: center;
 }
 
-.trackingList {
-  border: 5px solid black;
-  margin: 25px;
-  display: inline-block;
+.upload-form {
+  background-color: #f5f5f5;
+  margin: 0 5rem;
+  border-radius: 25px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
 }
-.mapQuest {
-  border: 5px solid black;
-  margin: 25px;
-  display: inline-block;
-}
+
+
 .twoColumns {
   width: 100%;
   text-align: center;
