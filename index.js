@@ -119,7 +119,7 @@ router.hooks({
         break;
       case "Upload":
         axios
-          .get(`${process.env.photoloto_API_URL}/Upload`)
+          .get(`${process.env.PHOTOLOTO_API_URL}/Upload`)
           .then(response => {
             // store response to state
             console.log("response", response);
