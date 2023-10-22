@@ -119,7 +119,7 @@ router.hooks({
         break;
       case "Upload":
         axios
-          .get(`${process.env.PHOTOLOTO_API_URL}/Upload`)
+          .get(`${process.env.PHOTOLOTO_API_URL}/reviews`)
           .then(response => {
             // store response to state
             console.log("response", response);
@@ -127,7 +127,7 @@ router.hooks({
             done();
           })
           .catch(error => {
-            console.log("Whoopsie", error);
+            console.log("Oh nose", error);
             done();
           });
         break;
