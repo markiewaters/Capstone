@@ -127,7 +127,7 @@ router.hooks({
             done();
           })
           .catch(error => {
-            console.log("Whoopsie", error);
+            console.log("Oh nose", error);
             done();
           });
         break;
