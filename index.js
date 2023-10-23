@@ -74,7 +74,7 @@ function afterRender(state) {
 
       axios
         // Make a POST request to the API to create a new pizza
-        .post(`${process.env.myAPI}/Upload`, requestData)
+        .post(`${process.env.myAPI}/reviews`, requestData)
         .then(response => {
           //  Then push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
           store.Upload.reviews.push(response.data);
@@ -82,7 +82,7 @@ function afterRender(state) {
         })
         // If there is an error log it to the console
         .catch(error => {
-          console.log("", error);
+          console.log("Oh Nose", error);
         });
     });
   }
