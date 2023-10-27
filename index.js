@@ -66,8 +66,8 @@ function afterRender(state) {
 
       // Create a request body object to send to the API
       const requestData = {
-        name: reviewList.name,
-        message: reviewList.message
+        name: reviewList.name.value,
+        message: reviewList.message.value
       };
       // Log the request body to the console
       console.log("request Body", requestData);

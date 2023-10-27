@@ -8,13 +8,20 @@ export default state => html`
         type="text"
         name="name"
         id="name"
+        value="name"
         placeholder="Type in your name"
         required
       />
       <h3>Type in your review!</h3>
       <div class="textDesc">
         <label for="message">Enter your message:</label>
-        <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          value="message"
+        ></textarea>
       </div>
 
       <input type="submit" value="Submit" />
