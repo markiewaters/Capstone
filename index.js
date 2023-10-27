@@ -54,8 +54,8 @@ function afterRender(state) {
       .bindPopup("Muir Beach")
       .addTo(map);
   }
-  // Displaying Reviews to Upload Page
-  if (state.view === "Upload") {
+
+  if (state.view === "Share") {
     // Add an event handler for the submit button on the form
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
@@ -66,17 +66,16 @@ function afterRender(state) {
 
       // Create a request body object to send to the API
       const requestData = {
-        name: reviewList.name.value,
-        message: reviewList.message.value
+        name: reviewList.name,
+        message: reviewList.message
       };
       // Log the request body to the console
       console.log("request Body", requestData);
-
+      // Displaying Reviews to Upload Page
       axios
-        // Make a POST request to the API to create a new pizza
-        .post(`${process.env.myAPI}/reviews`, requestData)
+        // Make a POST request to the API to create a new review
+        .post(`${process.env.PHOTOLOTO_API_URL}/reviews`, requestData)
         .then(response => {
-          //  Then push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
           store.Upload.reviews.push(response.data);
           router.navigate("/Upload");
         })
@@ -95,28 +94,6 @@ router.hooks({
         ? capitalize(params.data.view)
         : "Home";
     switch (view) {
-      case "Home":
-        axios
-          .get(
-            `http://api.openweathermap.org/data/2.5/weather?appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&q=st%20louis`
-          )
-          .then(response => {
-            const kelvinToFahrenheit = kelvinTemp =>
-              Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
-
-            store.Home.weather = {
-              city: response.data.name,
-              temp: kelvinToFahrenheit(response.data.main.temp),
-              feelsLike: kelvinToFahrenheit(response.data.main.feels_like),
-              description: response.data.weather[0].main
-            };
-            done();
-          })
-          .catch(err => {
-            console.log(err);
-            done();
-          });
-        break;
       case "Upload":
         axios
           .get(`${process.env.PHOTOLOTO_API_URL}/reviews`)
