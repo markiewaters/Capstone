@@ -1,22 +1,15 @@
 import html from "html-literal";
 
 export default state => html`
-  <section class="upload-form">
-    <form action="" method="POST">
-      <label for="file">Upload Your Picture:</label>
-      <input type="file" name="file" id="file" />
-
-      <input type="submit" value="Submit" />
-    </form>
-  </section>
   <section class="reviewBlock">
+    <h3 class="reviewHeader">Reviews</h3>
     <div class="reviewList">
       ${state.reviews.map(review => {
         return html`
           <ul>
-            <li>
+            <ul>
               ${review.name}, ${review.message}
-            </li>
+            </ul>
           </ul>
         `;
       })}
