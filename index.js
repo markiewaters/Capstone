@@ -29,7 +29,7 @@ function afterRender(state) {
     let map = L.mapquest.map("map", {
       center: [38.134557, -100.634766],
       layers: L.mapquest.tileLayer("map"),
-      zoom: 5
+      zoom: 4
     });
 
     // Pinned Locations
@@ -51,7 +51,7 @@ function afterRender(state) {
       icon: L.mapquest.icons.marker(),
       draggable: false
     })
-      .bindPopup("Muir Beach")
+      .bindPopup("Bok Tower Gardens")
       .addTo(map);
   }
 
