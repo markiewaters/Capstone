@@ -29,7 +29,7 @@ function afterRender(state) {
     let map = L.mapquest.map("map", {
       center: [38.134557, -100.634766],
       layers: L.mapquest.tileLayer("map"),
-      zoom: 5
+      zoom: 4
     });
 
     // Pinned Locations
@@ -51,7 +51,7 @@ function afterRender(state) {
       icon: L.mapquest.icons.marker(),
       draggable: false
     })
-      .bindPopup("Muir Beach")
+      .bindPopup("Bok Tower Gardens")
       .addTo(map);
   }
 
@@ -66,8 +66,8 @@ function afterRender(state) {
 
       // Create a request body object to send to the API
       const requestData = {
-        name: reviewList.name,
-        message: reviewList.message
+        name: reviewList.name.value,
+        message: reviewList.message.value
       };
       // Log the request body to the console
       console.log("request Body", requestData);

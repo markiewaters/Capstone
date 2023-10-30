@@ -1,7 +1,7 @@
 import html from "html-literal";
 import myImage from "/assets/img/myImage.jpg";
 
-export default (state) => html`
+export default state => html`
   <section class="about-page">
     <div class="about-wrapper">
       <div class="selfDesc">
@@ -15,7 +15,7 @@ export default (state) => html`
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div class="about-imgContainer">
+      <div class="about -imgContainer">
         <img
           src="${myImage}"
           class="about-img"

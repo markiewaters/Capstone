@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100%;
 }
 h1 {
   font-family: 'Crimson Text', serif;
@@ -18,9 +18,15 @@ p, div {
   font-family: 'Quicksand', sans-serif;
 }
 
+/* Box Shadow CSS */
+.Homepage, .selfDesc, .about-img, .share-form {
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 
 .fa-bars {
   display: none;
+  text-decoration: none;
 }
 nav {
   display: flex;
@@ -29,9 +35,10 @@ nav {
   text-decoration: none;
 }
 
-.nav-links>li {
+/* .nav-links>li {
   background-color: #f5f5f5;
-}
+  text-decoration: none;
+} */
 
 .header {
   background-color: #f5f5f5;
@@ -40,11 +47,6 @@ nav {
   margin: 0 5rem;
 }
 
-.headerPhoto {
-  width: 450px;
-  height: 300px;
-  border-radius: 10px;
-}
 
 .header {
   text-align: center;
@@ -59,35 +61,34 @@ nav {
   border-radius: 25px;
   text-align: center;
   padding: 5px;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
-}
-.heroImg {
-  height: 12px;
-  width: 12px;
 }
 
 .mapContainer {
   align-items: center;
   width: 80%;
-  margin: auto auto;
+  margin: 25px auto;
 }
 
 #map {
   width: 100%;
   height: 550px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 /* Home Page Section */
 
 
-/* About Section */
+/* Start of About Section */
 .about-wrapper {
   display: flex;
   flex-direction: row;
+  background-color: #f5f5f5;
+  margin: 5px 20px;
+  padding: 20px 10px;
+  border-radius: 25px;
 }
 
 .selfDesc {
-  background-color: #f5f5f5;
+  background-color: #eaeaea;
   margin: 0 50px;
   padding: 25px;
   border-radius: 25px;
@@ -107,17 +108,18 @@ nav {
   border-radius: 25px;
   margin: 0 50px;
 }
-/* About Section */
+/* End of About Section */
 
-/* Share Section */
+/* Start of Share Section */
 .share-form {
   background-color: #f5f5f5;
-  margin: 0 5rem;
+  margin: 0 15rem;
   border-radius: 25px;
   padding: 25px;
   display: flex;
   justify-content: center;
 }
+
 form > label {
   margin: 5px;
   border-radius: 25px;
@@ -133,12 +135,15 @@ form > input {
   margin: 5px;
   padding: 10px;
   border-radius: 25px;
-  display:
 }
 
-/* Share Section */
+#message {
+  border-radius: 10px;
+}
 
-/* Upload Section */
+/* End of Share Section */
+
+/* Start of Upload Section */
 .reviewHeader {
   font-size: 2.1rem;
   margin: 0 auto;
@@ -155,38 +160,9 @@ form > input {
   box-shadow:lightgray 3px 3px 3px 3px;
   padding: 5px 0;
 }
-/* Upload Section */
+/* End of Upload Section */
 
-/* Media Queries */
-@media (max-width: 549px) {
-  .hidden--mobile {
-    display: none !important;
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  nav>i {
-    padding: 1rem;
-    font-size: 2em;
-  }
-
-  nav>ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 0;
-  }
-
-  nav>ul>li {
-    padding: 0.5rem;
-    list-style-type: none;
-  }
-}
-
+/* Start of Media Queries */
 @media (max-width: 550px) {
   img {
     background-image: url(assets/img/pexels-leah-kelley-3935702.jpg);
@@ -198,24 +174,43 @@ form > input {
     display: none;
   }
 
-  .hidden--mobile {
-    display: none;
-  }
-}
-@media (min-width: 550px) {
   nav>ul {
     display: flex;
     justify-content: space-evenly;
+    background-color: #f5f5f5;
     padding: 0 0;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
   }
 
   nav>ul>li {
     display: inline-block;
     text-decoration: none;
-    border: 1px solid;
+    padding: 0.5rem 0.5rem;
+    border-radius: 25px;
+  }
+  /* .hidden--mobile {
+    display: none;
+  } */
+}
+@media (min-width: 549px) {
+  nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f5f5;
+    padding: 0 0;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    text-decoration: none;
     padding: 0.5rem 0.5rem;
     border-radius: 25px;
   }
 
 }
-/* Media Queries */
+/* End of Media Queries */

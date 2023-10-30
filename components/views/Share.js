@@ -3,6 +3,7 @@ import html from "html-literal";
 export default state => html`
   <section class="share-form">
     <form action="" method="POST">
+      <h3>Type in your review!</h3>
       <label for="name">Name:</label>
       <input
         type="text"
@@ -11,10 +12,16 @@ export default state => html`
         placeholder="Type in your name"
         required
       />
-      <h3>Type in your review!</h3>
+
       <div class="textDesc">
-        <label for="message">Enter your message:</label>
-        <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+        <label for="message"></label>
+        <textarea
+          name="message"
+          id="message"
+          cols="70"
+          rows="10"
+          placeholder="Enter Your message"
+        ></textarea>
       </div>
 
       <input type="submit" value="Submit" />
