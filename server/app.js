@@ -58,7 +58,7 @@ app.get("/status", (request, response) => {
   response.status(200).json({ message: "Service Healthy" });
 });
 
-app.use("/Upload", reviews);
+app.use("/reviews", reviews);
 
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
