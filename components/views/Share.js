@@ -3,15 +3,17 @@ import html from "html-literal";
 export default state => html`
   <section class="share-form">
     <form action="" method="POST">
-      <h3>Type in your review!</h3>
-      <label for="name">Name:</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Type in your name"
-        required
-      />
+      <h3 class="reviewHeader">Share your review!</h3>
+      <div class="nameBar">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Your name"
+          required
+        />
+      </div>
 
       <div class="textDesc">
         <label for="message"></label>
@@ -24,7 +26,7 @@ export default state => html`
         ></textarea>
       </div>
 
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" id="submitButton" />
     </form>
   </section>
   ;
