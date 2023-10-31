@@ -112,12 +112,28 @@ nav {
 
 /* Start of Share Section */
 .share-form {
+  display: flex;
   background-color: #f5f5f5;
   margin: 0 15rem;
   border-radius: 25px;
   padding: 25px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.reviewHeader {
+  text-align: center;
+}
+
+.nameBar {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#name {
+  border-radius: 15px;
+  padding: 5px 5px;
 }
 
 form > label {
