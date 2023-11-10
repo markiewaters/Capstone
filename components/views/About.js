@@ -5,6 +5,7 @@ export default state => html`
   <section class="about-page">
     <div class="about-wrapper">
       <div class="selfDesc">
+        <h2 class="about-header">About Me</h2>
         <p class="about-desc">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -14,13 +15,13 @@ export default state => html`
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </div>
-      <div class="about -imgContainer">
-        <img
-          src="${myImage}"
-          class="about-img"
-          alt="portrait image of Mark Reed"
-        />
+        <div class="about imgContainer">
+          <img
+            src="${myImage}"
+            class="about-img"
+            alt="portrait image of Mark Reed"
+          />
+        </div>
       </div>
     </div>
   </section>

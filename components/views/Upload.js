@@ -6,11 +6,12 @@ export default state => html`
     <div class="reviewList">
       ${state.reviews.map(review => {
         return html`
-          <ul>
+          <div class="reviewSubmission">
             <ul>
-              ${review.name}, ${review.message}
+              <p class="revName">${review.name}</p>
+              <div class="revMsg">${review.message}</div>
             </ul>
-          </ul>
+          </div>
         `;
       })}
     </div>

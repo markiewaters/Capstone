@@ -37,21 +37,27 @@ function afterRender(state) {
       icon: L.mapquest.icons.marker(),
       draggable: false
     })
-      .bindPopup("Muir Beach")
+      .bindPopup(
+        "<a href='https://www.nps.gov/goga/planyourvisit/muirbeach.htm'>Muir Beach - Parking lot, Muir Beach Overlook, Muir Beach, CA 94965</a>"
+      )
       .addTo(map);
 
     L.marker([40.75227, -73.97794], {
       icon: L.mapquest.icons.marker(),
       draggable: false
     })
-      .bindPopup("Grand Central Terminal")
+      .bindPopup(
+        "<a href='https://www.grandcentralterminal.com/'>Grand Central Terminal - 89 E 42nd St, New York, NY 10017</a>"
+      )
       .addTo(map);
 
     L.marker([27.91567, -81.56601], {
       icon: L.mapquest.icons.marker(),
       draggable: false
     })
-      .bindPopup("Bok Tower Gardens")
+      .bindPopup(
+        "<a href='https://boktowergardens.org/'>Bok Tower Gardens - 1151 Tower Blvd, Lake Wales, FL 33853</a>"
+      )
       .addTo(map);
   }
 
@@ -64,7 +70,7 @@ function afterRender(state) {
       const reviewList = event.target.elements;
       console.log("Type your Review", reviewList);
 
-      // Create a request body object to send to the API
+      // Create a request body object to send to my API
       const requestData = {
         name: reviewList.name.value,
         message: reviewList.message.value

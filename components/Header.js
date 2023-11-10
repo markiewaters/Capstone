@@ -1,11 +1,11 @@
 import html from "html-literal";
 
-export default (state) => html`
+export default state => html`
   <header>
-    <h1>
-      <div class="header">
+    <div>
+      <h1 class="headerText">
         PhotoLoto
-      </div>
-    </h1>
+      </h1>
+    </div>
   </header>
 `;
